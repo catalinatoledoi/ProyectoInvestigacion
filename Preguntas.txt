@@ -1,3 +1,52 @@
 1. ¿Cuál es el perfil sociodemográfico (edad, sexo y comuna) de los pacientes que presentan un peso relativo (IR_29301_PESO) y un costo alto?
 2. ¿Cómo varía la relación entre los días de estadía (DIAS_ESTADIA) y el peso relativo del GRD según el nivel de severidad?
 3. ¿Cuál es el incremento marginal en el costo estimado por cada nivel adicional de severidad, manteniendo constante la edad del paciente?
+
+¿Existen perfiles clínicos de pacientes asociados a alto consumo de recursos
+hospitalarios?
+¿Los pacientes de mayor complejidad presentan combinaciones específicas de
+diagnósticos?
+¿Existen subgrupos clínicos identificables mediante clustering?
+
+Cosas a documentar:
+
+- Sesgo: ¿La media de días de estancia es mucho mayor a la mediana? (Indica pacientes "outliers" de larga estadía).
+- Concentración: ¿Qué porcentaje de la muestra es Severidad 1 vs Severidad 4?
+
+2. Profundización del Contexto
+Glosario de Términos (Indispensable para tu proyecto)
+Para tu entrega, incluye estas definiciones técnicas:
+
+GRD (Grupos Relacionados por el Diagnóstico): Sistema de clasificación de pacientes con consumo de recursos similar.
+
+IR_29301_PESO (Peso Relativo): Medida de la complejidad clínica y consumo de recursos (1.0 = paciente promedio).
+
+IR_29301_SEVERIDAD: Escala de 1 a 4 que indica el nivel de complicaciones o comorbilidades.
+
+NaT (Not a Time): Valor nulo generado en la limpieza de fechas erróneas.
+
+3. Definición del Proyecto
+Aquí es donde formalizamos tus 3 preguntas de investigación que seleccionamos anteriormente.
+
+Justificación de relevancia: "La capacidad de predecir el costo hospitalario mediante el peso del GRD permite optimizar la asignación presupuestaria y detectar perfiles críticos que requieren mayor gestión clínica."
+
+3. Definición del Proyecto: Justificación
+Relevancia del Problema
+El sistema de salud chileno enfrenta una presión constante sobre sus recursos financieros. La gestión basada en GRD (Grupos Relacionados por el Diagnóstico) es la herramienta estándar para medir la eficiencia, pero a menudo se queda en un análisis retrospectivo.
+
+Este proyecto es relevante porque busca identificar proactivamente los perfiles de pacientes que generan un consumo desproporcionado de recursos (identificados mediante el IR_29301_PESO). Al entender si el costo se debe a la severidad clínica, a la ineficiencia en los días de estadía o a factores demográficos (como el envejecimiento de la población en ciertas comunas), el hospital puede:
+
+Mejorar la programación de pabellones.
+
+Diseñar protocolos específicos para pacientes crónicos de alta severidad.
+
+Predecir con mayor exactitud el presupuesto necesario para el próximo año.
+
+Factibilidad Técnica
+La factibilidad de este estudio está garantizada por tres pilares fundamentales ya validados en esta etapa inicial:
+
+Volumen de Datos: Contamos con una base consolidada de 1.048.522 registros válidos, lo que otorga una potencia estadística robusta para cualquier análisis inferencial y minimiza el error en los intervalos de confianza.
+
+Calidad de la Información: Tras el proceso de limpieza, se logró normalizar variables críticas como fechas, códigos de hospital y pesos relativos, eliminando inconsistencias (como registros "DESCONOCIDO") que podrían sesgar los resultados.
+
+Disponibilidad de Variables Clave: El dataset contiene la tríada perfecta para el análisis de costos en salud: Severidad (complejidad), Estancia (uso de cama) y Peso (consumo de insumos/procedimientos).
