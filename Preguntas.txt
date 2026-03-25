@@ -1,0 +1,3 @@
+1. ¿Cuál es el perfil sociodemográfico (edad, sexo y comuna) de los pacientes que presentan un peso relativo (IR_29301_PESO) y un costo alto?
+2. ¿Cómo varía la relación entre los días de estadía (DIAS_ESTADIA) y el peso relativo del GRD según el nivel de severidad?
+3. ¿Cuál es el incremento marginal en el costo estimado por cada nivel adicional de severidad, manteniendo constante la edad del paciente?
