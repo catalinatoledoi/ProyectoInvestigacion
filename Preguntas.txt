@@ -1,3 +1,13 @@
+>Preguntas del tema.
+¿Existen perfiles clínicos de pacientes asociados a alto consumo de recursos
+hospitalarios?
+¿Los pacientes de mayor complejidad presentan combinaciones específicas de
+diagnósticos?
+
+>Tres nueva preguntas de investigación propuestas por el grupo.
 1. ¿Cuál es el perfil sociodemográfico (edad, sexo y comuna) de los pacientes que presentan un peso relativo (IR_29301_PESO) y un costo alto?
 2. ¿Cómo varía la relación entre los días de estadía (DIAS_ESTADIA) y el peso relativo del GRD según el nivel de severidad?
 3. ¿Cuál es el incremento marginal en el costo estimado por cada nivel adicional de severidad, manteniendo constante la edad del paciente?
+
+>Pregunta de Investigación final.
+Entonces, ¿Cómo influyen las variables clínicas (severidad y combinaciones de diagnósticos complejos) y sociodemográficas (edad y comuna) en la determinación del "paciente de alto costo" (Peso Relativo superior a 1.0) y la extensión de los días de estancia hospitalaria en el sistema de salud pública chileno, según los registros de egresos GRD?
