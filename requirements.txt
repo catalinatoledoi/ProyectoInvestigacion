@@ -1,0 +1,14 @@
+# Análisis (notebooks analisis.ipynb, final.ipynb)
+pandas>=2.0,<3
+numpy>=1.24,<3
+matplotlib>=3.7,<4
+seaborn>=0.13,<1
+scipy>=1.10,<2
+openpyxl>=3.1,<4
+
+# Jupyter / kernel para usar el entorno desde VS Code / Jupyter
+jupyter>=1.0,<2
+ipykernel>=6.25,<7
+
+# Modelo logístico rápido en muestras grandes (submuestra estratificada)
+scikit-learn>=1.5,<2
