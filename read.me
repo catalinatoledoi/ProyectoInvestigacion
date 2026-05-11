@@ -16,3 +16,44 @@ Este proyecto tiene como objetivo identificar y caracterizar los perfiles clíni
 Para reproducir este análisis, es necesario contar con un entorno de Python 3.x y las siguientes librerías:
 ```bash
 pip install pandas numpy matplotlib seaborn statsmodels scipy
+
+```
+
+## Estructura del Análisis (Notebook)
+
+El archivo `analisis.ipynb` sigue un flujo de trabajo de ciencia de datos estandarizado:
+
+1. **Limpieza de Datos (Data Cleaning):**
+* Gestión de valores nulos (`NaN`) en variables de procedimientos y diagnósticos.
+* Tratamiento de valores atípicos (*outliers*) en la variable de estadía mediante el método de Rango Intercuartílico (IQR).
+
+
+2. **Análisis Exploratorio (EDA):**
+* Visualización de distribuciones etarias y dispersión del peso relativo por severidad.
+
+
+3. **Análisis Inferencial:**
+* Ejecución de Test ANOVA para validar diferencias significativas entre niveles de severidad.
+* Validación de supuestos estadísticos (Test de Levene y Shapiro-Wilk).
+
+
+4. **Modelamiento:**
+* Regresión Lineal Múltiple (OLS) para cuantificar el impacto del sexo, edad y región en el costo hospitalario ($R^2 = 0.434$).
+
+
+
+## Instrucciones de Ejecución
+
+1. Coloque el archivo fuente de los egresos del DEIS en el mismo directorio que el notebook.
+2. Inicie el entorno de Jupyter:
+
+jupyter notebook analisis.ipynb
+
+3. Ejecute todas las celdas secuencialmente. Los gráficos y resúmenes estadísticos se generarán automáticamente.
+
+## Principales Hallazgos
+
+* Se confirmó una relación exponencial entre la severidad clínica (Nivel 3) y el costo.
+* El modelo predictivo explica el 43.4% de la variabilidad del gasto basado en factores demográficos y territoriales.
+* Se detectó a la Región de Aysén como el área con mayor impacto marginal en el costo hospitalario.
+
